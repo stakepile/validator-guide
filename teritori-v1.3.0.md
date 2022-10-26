@@ -4,8 +4,8 @@ Upgrade is scheduled for block `378256`. Countdown clock at [here](https://explo
 
 This guide assumes cosmovisor is used to manage upgrades
 
+# Get new version
 ```bash
-# get new version
 cd teritori-chain
 git pull
 git checkout v1.3.0
@@ -21,14 +21,14 @@ teritorid version
 teritorid version --long | grep commit
 ```
 
-# Make new upgrades folder and copy binary to cosmovisor upgrade folder
+# Copy binary to cosmovisor upgrade folder
 
 ```bash
 mkdir -p $HOME/.teritorid/cosmovisor/upgrades/v1.3.0/bin
 cp $HOME/go/bin/teritorid $HOME/.teritorid/cosmovisor/upgrades/v1.3.0/bin
 ```
 
-# Verify new version
+# Confirm new version
 
 ```bash
 # Should show v1.3.0
