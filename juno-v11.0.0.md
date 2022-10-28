@@ -37,7 +37,7 @@ $HOME/.juno/cosmovisor/upgrades/v11/bin/junod version
 
 # NEW configuration
 
-***IMPORTANT*** - This upgrade requires the following new configuration to be added to the file .starsd/config/app.toml
+***IMPORTANT*** - This upgrade requires the following new configuration to be added to the file .juno/config/app.toml
 This block of new configurations should be added below the line 'index-events = []' and above the block of Telemetry Configuration
 
 ```bash
@@ -47,5 +47,5 @@ iavl-cache-size = 781250
 
 # IAVLDisableFastNode enables or disables the fast node feature of IAVL.
 # Default is true.
-iavl-disable-fastnode = true
+iavl-disable-fastnode = false
 ```
