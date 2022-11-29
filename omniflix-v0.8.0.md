@@ -43,7 +43,7 @@ $DAEMON_HOME/cosmovisor/upgrades/upgrade_1/bin/omniflixhubd version
 
 # Additional note
 - Make sure to add the following config to config/app.toml right above the Telemetry config block. The location within the file when adding this config is important
-- This needs to be added before the upgrade block height
+- This needs to be added before the upgrade block height. You can upgrade the config and restart the service with the old version before the upgrade block height.
 ```bash
 iavl-disable-fastnode = false
 ```
