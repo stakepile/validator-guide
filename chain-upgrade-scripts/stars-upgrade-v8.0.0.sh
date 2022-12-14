@@ -68,5 +68,7 @@ cp ${USER_HOME}/go/bin/${BINARY_NAME} ${UPGRADE_FOLDER}
 
 echo "Verifying version from cosmovisor upgrade folder..."
 ${UPGRADE_FOLDER}/${BINARY_NAME} version
+${UPGRADE_FOLDER}/${BINARY_NAME} q wasm libwasmvm-version
+# to verify libwasm run $HOME/.starsd/cosmovisor/upgrades/v8/bin/starsd q wasm libwasmvm-version
 
 echo "Chain upgraded! Make sure Cosmovisor is running: journalctl -fu cosmovisor. Cosmovisor will automatically upgrade at preset upgrade height."
